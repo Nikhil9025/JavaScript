@@ -4,7 +4,7 @@ let accountMail = " Nikhil@gmail.com";
 var accountPassword = "90259026";
 accountcity = "Pune";
 
-
+// cont accountId = 214356; // it is not allowed we cannot change const value
 
 accountMail = "json@gamil.com";
 accountPassword = "216655";
