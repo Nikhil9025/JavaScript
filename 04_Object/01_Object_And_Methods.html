@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects And Its Method</title>
+</head>
+<body>
+    
+    <script>
+        // Object and its methods. 
+        
+        // 1] 
+
+        const Obj = {
+
+            name:"Nikhil",
+            Age : 24,
+            ID  : 8888,
+        }
+
+        console.log(Object.keys(Obj)); // used to get only keys of object .
+        console.log(Object.values(Obj)); //used to get only value of keys from object . 
+        console.log(Object.entries(Obj)); // used to get input into array format .
+
+        // 2] .assign() .
+
+        const Obj1 = { Name : "Nikhil" }
+        const Obj2 = { ID : 7823}
+        const merge = Object.assign({} , Obj1 , Obj2);
+        console.log(merge);  // used to merge two different Object into one single Object .
+
+        // 3] .freeze() .
+
+        const myObj = {
+            name : "Raajkumar",
+            DOB : 26-5-2001
+        }
+
+        // Object.freeze(myObj); used to freez the key value pair into the Object .
+
+        // myObj.name = "Kedar";
+        // console.log(myObj);
+        
+        // 4] seal() .
+
+        const sealObj = {
+            name : "Nikhil",
+            ID : 1236
+        }
+
+        sealObj.name = "Pawan";  // used to change only existing values .   
+        
+        Object.seal(sealObj)
+        console.log(sealObj);
+        
+        
+        // 5] hasOwn() .
+
+        const Own = {
+            productName : "JK PIPES",
+            price : 1200
+        }
+
+        console.log(Object.hasOwn(Own , "productName")); // it cheaks key are present or not in the object .
+        
+        
+        
+
+    </script>
+
+</body>
+</html>
