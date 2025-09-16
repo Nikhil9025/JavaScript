@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+
+
+    <script>
+
+
+        var number = 100;
+        console.log(number); // don't use var 
+        
+        
+
+        let name = "Nikhil";
+        console.log(name); 
+
+        //let name = "" wer cannot reDeclare Variable in let  .
+
+        const City = "Pune" ;
+        console.log(City);
+
+
+
+        // Quations .
+
+        // 1 st Enter Name . 
+
+        let Name = "Nikhil Tisangikar";
+        console.log(Name);
+
+        // 2nd Enter boolean value .
+
+        let Status = true;
+        console.log(Status);
+
+        // 3rd get Pin code 
+
+        const pinCode = 413304 ;
+        console.log(pinCode);
+        
+        
+          
+
+
+    </script>
+
+</body>
+</html>
+
