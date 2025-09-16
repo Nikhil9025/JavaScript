@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+</head>
+
+<body>
+
+    <script>
+
+        // type Casting
+
+        console.log("5" + 2);   // "52"  (number → string)
+        console.log("5" - 2);   // 3     (string → number)
+        console.log(true + 1);  // 2     (boolean → number)    
+
+        // toString() .
+
+        let Num = 100;
+        console.log(String(Num));
+        console.log(Num.toString());
+
+        // use parseInt() , parseFloat()  . 
+
+        console.log(Number("123"));   // 123
+        console.log(parseInt("123")); // 123
+        console.log(parseFloat("12.5")); // 12.5
+        console.log(Number(true));    // 1
+        console.log(Number(false));   // 0
+
+        // Boolean conversion 
+
+        console.log(Boolean(1));   // true
+        console.log(Boolean(0));   // false
+        console.log(Boolean(""));  // false
+        console.log(Boolean("Hi")); // true
+
+    </script>
+
+</body>
+
+</html>
