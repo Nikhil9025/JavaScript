@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+
+<style>
+    #btn {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .toggle {
+        display: none;
+
+    }
+
+    .square {
+        padding: 5px;
+        height: 20px;
+        width: 50px;
+        background-color: black;
+
+    }
+
+    /* 2nd Quation. */
+
+    #btn2Div {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .paraData {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+    }
+</style>
+
+<body>
+
+    <!-- First Quations -->
+
+    <div id="btn">
+        <button id="clickbtn">Click Here</button>
+    </div>
+
+    <div class="toggle">
+
+        <div class="square"></div>
+
+    </div>
+
+    <!--  second Quations  -->
+
+    <div class="paraData">
+        <p id="para1">Hello Hariom</p>
+    </div>
+
+    <div id="btn2Div">
+        <button id="btn2">Click Here</button>
+    </div>
+
+    <!-- Third Quation -->
+
+    <div id="contaonList">
+
+        <ul id="AddLi">
+            <li>Home</li>
+            <li>Product</li>
+            <li>Contact</li>
+        </ul>
+
+        <button id="AddItem">Add Items</button>
+
+    </div>
+
+    <!-- Fourth Quation -->
+
+    <ul id="uLparent">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Cart</li>
+    </ul>
+
+    <!-- 5th Quation -->
+
+    <div id="Div1">
+        I Am Original Div
+    </div>
+
+    <button id="BTN">Change Div</button>
+
+    <script>
+        // 1st Quation .
+
+        let togdiv = document.querySelector(".toggle");
+
+        document.querySelector("#clickbtn").addEventListener("click", function () {
+            // togdiv.style.display = "block";
+            // alert("hiii");
+
+            if (togdiv.style.display == "none") {
+                togdiv.style.display = "block";
+            } else {
+                togdiv.style.display = "none";
+            }
+        })
+
+        // 2nd Quation .
+
+        let innerHtml = document.querySelector("#para1");
+        document.querySelector("#btn2").addEventListener("click", function () {
+            innerHtml.innerHTML = "Hello Nikhil";
+        })
+
+        // 3rd Quations 
+
+        document.querySelector("#AddItem").addEventListener("click", function () {
+
+            let parent = document.querySelector("#AddLi");
+            let li = document.createElement("li");
+            li.innerText = "Cart";
+
+            parent.appendChild(li);
+
+        })
+
+
+        // 4th quation .
+
+
+        document.querySelector("#uLparent").addEventListener("click", function (e) {
+
+            //   e.preventDefault();
+            // console.log("hello");
+
+
+            if (e.target.tagName === "LI")
+
+                console.log(e.target.textContent);
+        })
+
+        //5th Quation .
+
+        document.querySelector("#BTN").addEventListener("click", function () {
+
+            let oldDiv = document.querySelector("#Div1");
+
+            let newDiv = document.createElement("div");
+            newDiv.innerHTML = "I Am A New Div";
+
+            oldDiv.replaceWith(newDiv);
+
+        })
+
+
+
+
+    </script>
+
+</body>
+
+</html>
